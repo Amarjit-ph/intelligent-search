@@ -113,7 +113,7 @@ const Introduction = ({ PlayIntro }) => {
       <div className='text-white text-center mx-8 text-sm decoration-dotted italic font-light'>
         Alita is a Artificial Intelligence cyborg,<br />
         Developed by Amarjit Pheiroijam,<br /> An Engineer, who realise that she actually has the soul of a teenager and a helpful attitude,
-        She is still learning but she will help you create your find all your answers.
+        She is still learning but she answer most of your question.
         <br />
       </div>
       <div className='text-white text-center'>
