@@ -112,8 +112,8 @@ const Introduction = ({ PlayIntro }) => {
 
       <div className='text-white text-center mx-8 text-sm decoration-dotted italic font-light'>
         Alita is a Artificial Intelligence cyborg,<br />
-        Developed by Amarjit Pheiroijam,<br /> An Engineer, who realise that she actually has the soul of a teenager and a helpful attitude,
-        She is still learning but she answer most of your question.
+        Developed by Amarjit Pheiroijam,<br /> An Engineer, who realize that she actually has the soul of a teenager with a helpful attitude,
+  She is still learning but she answers most of your questions.
         <br />
       </div>
       <div className='text-white text-center'>
@@ -151,7 +151,7 @@ const Running = ({ processing, pulse, handleSetQuestion, ask, answer, gotAnswer,
         onChange={(e) => {
           handleSetQuestion(e.target.value);
         }}
-        placeholder='What is human life expectancy in the India?.'>
+        placeholder='What is human life expectancy in the India?'>
       </textarea>
 
         <div className='text-gray-400 text-xs font-bold mt-1 mb-3'>Only five questions Per Session, Please be mindful !</div>
