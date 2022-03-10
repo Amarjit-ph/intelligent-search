@@ -1,5 +1,5 @@
 # Intelligence Search
-Semantic search over a set of documents which means that you can provide a query, such as a natural language question or a statement, and the provided documents will be scored and ranked based on how semantically related they are to the input query.
+AI Semantic search over a set of documents which means that you can provide a query such as a natural language question or a statement, and the provided query will be scored and ranked based on how semantically related they are to the input query.
 
 Powered by GTP-3<br>
 
