@@ -24,7 +24,6 @@ const App = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
   }, [])
-  
   function initialize(){
     setRunning(true);
   }
@@ -34,17 +33,16 @@ const App = () => {
   const ask = async () => {
     setProcessing(true);
     setProgress(0);
-
     //LOADING
-    const timer = setInterval(() => {
-      setProgress((oldProgress) => {
-        if (oldProgress === 70) {
-          return;
-        }
-        const diff = Math.random() * 10;
-        return Math.min(oldProgress + diff, 100);
-      });
-    }, 300);
+    // const timer = setInterval(() => {
+    //   setProgress((oldProgress) => {
+    //     if (oldProgress === 70) {
+    //       return;
+    //     }
+    //     const diff = Math.random() * 10;
+    //     return Math.min(oldProgress + diff, 100);
+    //   });
+    // }, 300);
 
     if (count > 5) {
       setRunning(false);
@@ -82,7 +80,6 @@ const App = () => {
   );
 }
 
-
 const Running = ({ processing, handleSetQuestion, ask, answer, gotAnswer, progress }) => {
   return (
     <div class="m-10 h-screen ">
@@ -110,7 +107,7 @@ const Running = ({ processing, handleSetQuestion, ask, answer, gotAnswer, progre
         <div className='text-gray-400 text-xs font-bold mt-1 mb-3'>Only five questions Per Session, Please be mindful !</div>
         {processing ?<LinearProgress variant="determinate" value={progress} color={"inherit"} />:
           <button class="bg-black text-white w-full h-10 mt-3" onClick={ask}>ASK</button>}
-        {gotAnswer == true ? <>
+        {gotAnswer === true ? <>
           <div className='text-black mt-6 mb-2 font-black text-sm'>GENERATED ANSWER</div>
           <div className='font-bold text-xs'>{answer} </div>
         </> : <></>}
